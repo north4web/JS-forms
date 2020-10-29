@@ -20,7 +20,7 @@ function submitFunction(event) {
         email.style.borderColor="red";
         userError2.innerHTML="Please enter your email.";
     }
-    else if (email.value.indexOf("@") === -1 | email.value.indexOf(".")=== -1) {
+    else if (email.value.indexOf("@") === -1 | email.value.indexOf(".") === -1 | email.value.length < 7) {
             userError2a.style.color="orange";
             email.style.borderColor="orange";
             userError2a.innerHTML="Please enter correct email.";
